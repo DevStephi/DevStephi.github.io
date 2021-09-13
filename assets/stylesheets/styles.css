@@ -1,0 +1,572 @@
+body {
+	font-family: 'Noto Sans JP', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	position: relative;
+	background-color: #f7f8fa;
+}
+
+a {
+	color: #5b5d5f;
+	text-decoration: none;
+	background-color: transparent;
+}
+
+/*  ========================================
+                PAGE NAVBAR
+    ======================================== */
+
+#main-navbar {
+	font-size: 1.25em;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+}
+
+#main-navbar .navbar-brand > a {
+	margin: 0.5em 0.2em;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+#main-navbar .navbar-brand > a:hover {
+	text-decoration: none;
+}
+
+#main-navbar .navbar-brand > a > svg {
+	width: 20px;
+	height: 20px;
+	vertical-align: unset;
+}
+
+#main-navbar .navbar-brand > a > svg > path {
+	fill: white;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+#main-navbar #navbarNav {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+#main-navbar #navbarNav .nav-item {
+	margin: 0.8em;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+#main-navbar #navbarNav .nav-item .nav-link {
+	padding-left: 0;
+	margin-bottom: 8px;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+#main-navbar #navbarNav .nav-item .nav-link.active,
+#main-navbar #navbarNav .nav-item .nav-link:hover {
+	color: white;
+	border-bottom: 3px white solid;
+	width: 85%;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+#main-navbar.affix {
+	background-color: rgba(255, 255, 255, 0.95) !important;
+	font-size: 1.2em;
+	-webkit-transition: all 300ms linear;
+	transition: all 300ms linear;
+}
+
+#main-navbar.affix .navbar-brand > a > svg > path {
+	fill: #212529;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+#main-navbar.affix #navbarNav .nav-item {
+	margin: 0.3em 0.8em;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+#main-navbar.affix #navbarNav .nav-item .nav-link {
+	color: rgba(0, 0, 0, 0.5) !important;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+#main-navbar.affix #navbarNav .nav-item .nav-link.active,
+#main-navbar.affix #navbarNav .nav-item .nav-link:hover {
+	color: #212529 !important;
+	border-bottom: 3px #212529 solid;
+	width: 85%;
+	-webkit-transition: all 200ms linear;
+	transition: all 200ms linear;
+}
+
+/*  ========================================
+                PAGE HEADER
+    ======================================== */
+
+#showcase.jumbotron {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 100vh;
+	min-height: 500px;
+	border-radius: 0;
+	color: white;
+	background: -webkit-gradient(
+			linear,
+			left top,
+			left bottom,
+			from(rgba(22, 22, 22, 0.6)),
+			to(rgba(22, 22, 22, 0.6))
+		),
+		url('../images/header.jpg') center center/cover no-repeat scroll;
+	background: linear-gradient(rgba(22, 22, 22, 0.6) 0%, rgba(22, 22, 22, 0.6) 100%),
+		url('../images/header.jpg') center center/cover no-repeat scroll;
+}
+
+#showcase.jumbotron h1 {
+	font-weight: 500 !important;
+	text-align: center;
+}
+
+#showcase .d-block {
+	height: 48px;
+}
+
+#showcase.jumbotron #typed,
+#showcase.jumbotron .typed-cursor {
+	font-size: 2em;
+}
+
+#showcase.jumbotron .arrow-to-scroll-down {
+	position: absolute;
+	bottom: 10%;
+}
+
+#showcase.jumbotron .arrow-to-scroll-down > a > svg {
+	width: 19.91px;
+	height: 25px;
+	-webkit-animation: scrollDown 2s infinite;
+	animation: scrollDown 2s infinite;
+}
+
+#showcase.jumbotron .arrow-to-scroll-down > a > svg > path {
+	fill: white;
+	stroke: white;
+	stroke-width: 10px;
+}
+
+@-webkit-keyframes scrollDown {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+
+@keyframes scrollDown {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	40% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		transform: translateY(-15px);
+	}
+}
+
+/*  ========================================
+              RESUME SECTION
+    ======================================== */
+
+#about {
+	padding: 4em 0;
+}
+
+#about .resume {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#about .resume .resume.header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	height: 220px;
+	background-color: #5b5d5f;
+}
+
+#about .resume .resume.header img {
+	width: 220px;
+}
+
+#about .resume .resume.header .personal.information {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	padding: 1.5rem;
+	color: rgba(255, 255, 255, 0.9);
+	text-align: left;
+}
+
+#about .resume .resume.header .personal.information .primary-info h3 {
+	color: white;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+#about .resume .resume.header .personal.information .primary-info {
+	color: rgba(255, 255, 255, 0.9);
+}
+
+#about .resume .resume.header .personal.information .primary-info li {
+	cursor: default;
+}
+
+#about .resume .resume.header .personal.information .primary-info li > svg {
+	width: 18px;
+	height: 16px;
+}
+
+#about .resume .resume.header .personal.information .primary-info li > svg > path {
+	fill: white;
+}
+
+#about .resume .resume.body {
+	padding: 3rem;
+	color: #5b5d5f;
+}
+
+#about .resume .resume.body .title {
+	font-size: 1.25rem;
+	font-weight: 700;
+	position: relative;
+	margin-bottom: 1rem;
+	padding-bottom: 1rem;
+	text-transform: uppercase;
+}
+
+#about .resume .resume.body .title::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1.5px;
+	background: #8d9aad;
+}
+
+#about .resume .resume.body .summary {
+	margin-bottom: 3rem;
+}
+
+#about .resume .resume.body .education .timeline,
+#about .resume .resume.body .work-experience .timeline {
+	padding-left: 2rem;
+	position: relative;
+}
+
+#about .resume .resume.body .education .timeline article.item,
+#about .resume .resume.body .work-experience .timeline article.item {
+	position: relative;
+}
+
+#about .resume .resume.body .education .timeline article.item .header,
+#about .resume .resume.body .work-experience .timeline article.item .header {
+	margin-bottom: 0.5rem;
+}
+
+#about .resume .resume.body .education .timeline article.item .header .item-title,
+#about .resume .resume.body .work-experience .timeline article.item .header .item-title {
+	font-size: 1.1em;
+	font-weight: 700;
+	margin-bottom: 0.25rem;
+}
+
+#about .resume .resume.body .education .timeline article.item .header .institution,
+#about .resume .resume.body .work-experience .timeline article.item .header .institution {
+	color: #58677c;
+	font-size: 0.875rem;
+	font-weight: 500;
+	margin-left: auto !important;
+}
+
+#about .resume .resume.body .education .timeline article.item .header .time,
+#about .resume .resume.body .work-experience .timeline article.item .header .time {
+	font-size: 0.875rem;
+	color: #aab4c3;
+}
+
+#about .resume .resume.body .education .timeline article.item .body .item-title,
+#about .resume .resume.body .work-experience .timeline article.item .body .item-title {
+	font-size: 0.95rem;
+	font-weight: 700;
+}
+
+#about .resume .resume.body .education .timeline article.item::before,
+#about .resume .resume.body .work-experience .timeline article.item::before {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	left: -32px;
+	top: 3px;
+	width: 15px;
+	height: 15px;
+	border: 4px solid #58677c;
+	background: white;
+	border-radius: 50%;
+}
+
+#about .resume .resume.body .education .timeline::before,
+#about .resume .resume.body .work-experience .timeline::before {
+	content: '';
+	display: inline-block;
+	width: 3px;
+	height: 100%;
+	background: #aab4c3;
+	left: 6px;
+	top: 4px;
+	position: absolute;
+}
+
+#about .resume .resume.body .skills {
+	margin-bottom: 3rem;
+}
+
+#about .resume .resume.body .skills .body div.item .item-title {
+	font-size: 0.95rem;
+	font-weight: 700;
+	margin-bottom: 0.75rem;
+}
+
+#about .resume .resume.body .skills .body div.item ul li {
+	margin-bottom: 0.5rem;
+}
+
+#about .resume .resume.body .skills .body div.item ul li .name {
+	font-size: 0.8125rem;
+	margin: 0;
+}
+
+#about .resume .resume.body .skills .body div.item ul li .skill-progress {
+	height: 0.6rem;
+}
+
+#about .resume .resume.body .activities {
+	margin-bottom: 3rem;
+}
+
+#about .resume .resume.body .activities .body div.item .item-title {
+	font-size: 0.95rem;
+	font-weight: 700;
+	margin-bottom: 1px;
+}
+
+#about .resume .resume.body .activities .body div.item .institution {
+	font-size: 0.875rem;
+	margin: 0;
+}
+
+#about .resume .resume.body .activities .body div.item .time {
+	font-size: 0.875rem;
+	color: #aab4c3;
+	margin-bottom: 4px;
+}
+
+#about .resume .resume.body .hobbies {
+	margin-bottom: 3rem;
+}
+
+#about .resume .resume.body .hobbies li {
+	margin-bottom: 0.25rem;
+}
+
+footer {
+	background-color: #5b5d5f;
+	color: white;
+	text-align: center;
+	padding: 1rem;
+}
+
+footer .social a > svg {
+	width: 32px;
+	height: 47px;
+	margin: 0 0.3rem;
+}
+
+footer .social a > svg > path {
+	fill: white;
+}
+
+/*  ===================================
+          RESPONSIVE BEHAVIOUR
+    =================================== */
+
+@media (max-width: 1200px) {
+	#showcase.jumbotron h1 {
+		font-size: 4rem !important;
+	}
+}
+
+@media (max-width: 992px) {
+	#showcase.jumbotron h1 {
+		font-size: 3.5rem !important;
+	}
+	#showcase.jumbotron #typed,
+	#showcase.jumbotron .typed-cursor {
+		font-size: 1.8em;
+	}
+}
+
+@media (max-width: 768px) {
+	#main-navbar #navbarNav .nav-item {
+		margin: 0 0.8em;
+	}
+
+	#showcase.jumbotron h1 {
+		font-size: 3rem !important;
+	}
+	#showcase.jumbotron #typed,
+	#showcase.jumbotron .typed-cursor {
+		font-size: 1.5em;
+	}
+
+	#showcase.jumbotron {
+		margin: 0;
+	}
+
+	#about .resume .resume.header .personal.information .primary-info {
+		margin: 0 auto;
+	}
+
+	#about .resume .resume.header .personal.information {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+
+	#about .resume .resume.header {
+		padding-top: 4rem;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		height: auto;
+	}
+
+	#about .resume .resume.header img {
+		width: 160px;
+		border-radius: 5px;
+	}
+
+	#about {
+		padding-top: 0;
+	}
+}
+
+@media (max-width: 576px) {
+	#showcase.jumbotron h1 {
+		font-size: 2.5rem !important;
+	}
+	#showcase.jumbotron #typed,
+	#showcase.jumbotron .typed-cursor {
+		font-size: 1.25em;
+	}
+
+	#about .resume .resume.header .personal.information .primary-info h3 {
+		font-size: 1.5rem;
+	}
+
+	#about .resume .resume.header .personal.information .primary-info h4 {
+		font-size: 1.2rem;
+	}
+
+	#about .resume .resume.header .personal.information .primary-info li,
+	#about .resume .resume.body {
+		font-size: 0.9rem;
+	}
+
+	#about .resume .resume.body {
+		padding: 2rem;
+	}
+
+	#about .resume .resume.body .title {
+		font-size: 1.15rem;
+	}
+
+	footer .social a > svg {
+		width: 25px;
+		height: 40px;
+	}
+}
+
+@media (max-width: 480px) {
+	#showcase.jumbotron h1 {
+		font-size: 2rem !important;
+	}
+	#showcase.jumbotron #typed,
+	#showcase.jumbotron .typed-cursor {
+		font-size: 1em;
+	}
+
+	#about .resume .resume.header .personal.information .primary-info h3 {
+		font-size: 1.3rem;
+	}
+
+	#about .resume .resume.header .personal.information .primary-info h4 {
+		font-size: 1.1rem;
+	}
+
+	#about .resume .resume.header .personal.information .primary-info li,
+	#about .resume .resume.body {
+		font-size: 0.8rem;
+	}
+
+	#about .resume .resume.body {
+		padding: 1.5rem;
+	}
+
+	#about .resume .resume.body .title {
+		font-size: 1rem;
+	}
+}

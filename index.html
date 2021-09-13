@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- METATAGS -->
+		<meta charset="UTF-8" />
+		<!-- To ensure proper rendering and touch zooming for all devices -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta
+			name="description"
+			content="I'm a Venezuelan medical doctor based in Berlin. My goal is improving medical diagnosis and treatment process as well as enhancing
+		the way clinical records are analyzed, processed and stored." 
+		/>
+		<meta name="theme-color" content="#5b5d5f" />
+		<!-- Favicon -->
+			<!-- TODO: Insert here your favicons if any -->
+		<!-- // -->
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+			crossorigin="anonymous"
+		/>
+		<!-- Import Font Family -->
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:500,700&display=swap"
+		/>
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="assets/stylesheets/styles.css" />
+		<!-- Page title -->
+		<title>Stephanie Álvarez</title>
+	</head>
+	<body data-spy="scroll" data-target="#main-navbar">
+		<!-- Header section -->
+		<header>
+			<!-- Navbar -->
+			<!-- Expands when viewport is greater than 768px wide -->
+			<nav id="main-navbar" class="navbar navbar-expand-md fixed-top navbar-dark bg-transparent">
+				<div class="container">
+					<div class="navbar-brand">
+						<a
+							aria-label="Check my Twitter account"
+							href="https://twitter.com/SamyRodrguez"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<!-- Twitter icon -->
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path
+									d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+								/>
+							</svg>
+						</a>
+						<a
+							aria-label="Check my LinkedIn account"
+							href="https://www.linkedin.com/in/samrodriguezlopez/"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<!-- LinkedIn icon -->
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+								<path
+									d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+								/>
+							</svg>
+						</a>
+						<a
+							aria-label="Check my GitHub account"
+							href="https://github.com/Sam1320"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<!-- GitHub icon -->
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+								<path
+									d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+								/>
+							</svg>
+						</a>
+						<a
+							aria-label="Send me an email"
+							href="mailto:sarl132040@gmail.com"
+							target="_blank"
+							rel="noopener noreferrer"
+						>
+							<!-- Envelope icon -->
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+								<path
+									d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+								/>
+							</svg>
+						</a>
+					</div>
+					<!-- Navbar collapsed button. Only visible when viewport is less than 768px wide -->
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarNav"
+						aria-controls="navbarNav"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<!-- Navbar menu list -->
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#showcase">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#about">About</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<!-- /End of navbar -->
+
+			<!-- This section contains the header background image of the page (CSS) -->
+			<!-- The id "showcase" is used by the scrollspy to target the scroll when clicked in the navbar -->
+			<section id="showcase" class="jumbotron">
+				<!-- Main title of the page -->
+				<h1 class="display-3">Stephanie Álvarez</h1>
+				<div class="d-block">
+					<!-- This id "typed-strings" is used by the Typed.js library -->
+					<!-- Typed.js takes the text inside every <span> tag for animation -->
+					<div id="typed-strings">
+						<span>I am a <strong>Medical Doctor</strong></span>
+						<span>Focused on <em>Machine Learning</em></span>
+					</div>
+					<span id="typed"></span>
+				</div>
+				<!-- Animated arrow to scroll down -->
+				<div class="arrow-to-scroll-down d-block">
+					<a aria-label="Go to about section" href="#about">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -10 448 512">
+							<path
+								d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+							/>
+						</svg>
+					</a>
+				</div>
+			</section>
+			<!-- /End of the showcase section-->
+		</header>
+		<!-- /End of the header section-->
+
+		<!-- Main section -->
+		<main>
+			<!-- The id "about" is used by the scrollspy to target the scroll when clicked in the navbar -->
+			<section id="about">
+				<div class="container resume shadow">
+					<!-- Header of the resume block -->
+					<div class="resume header">
+						<!-- Avatar image (220x220 pixels) -->
+						<img src="assets/images/avatar.jpg" alt="A front picture of Stephanie Álvarez" />
+						<div class="personal information">
+							<div class="primary-info">
+								<h3>Stephanie Álvarez</h3>
+								<h4 class="lead mb-3">Ingeniero de Telecomunicaciones</h4>
+								<!-- Main contact information -->
+								<ul class="list-unstyled pt-3">
+									<li class="mb-2">
+										<svg class="mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+											<path
+												d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"
+											/>
+										</svg>
+										<span class="pl-2">Almería, España</span>
+									</li>
+									<li>
+										<svg class="mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+											<path
+												d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z"
+											/>
+										</svg>
+										<span class="pl-2">+49 (176) 295-30361</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- /End of the header of the resume block -->
+
+					<!-- Main block of the resume -->
+					<div class="resume body">
+						<!-- Summary or profile text (resumed) of Samuel -->
+						<section class="summary">
+							<h2 class="title">Profile</h2>
+							<p>
+								I see machine learning models and other AI-technologies as the future of medicine.
+								My goal is improving medical diagnosis and treatment process as well as enhancing
+								the way clinical records are analyzed, processed and stored.
+							</p>
+						</section>
+
+						<!-- This section consists of one row with two columns when viewport size is large -->
+						<!-- and one column per row when vewport size is medium or smaller -->
+						<div class="row">
+							<!-- Wider column (9 of 12) -->
+							<div class="col-lg-9 my-3">
+								<!-- Education section -->
+								<section class="education mb-5">
+									<h2 class="title">Education</h2>
+
+									<!-- Contains the timeline vertical line to the left (CSS) -->
+									<div class="timeline">
+										<!-- Each article represents a study entry. Contains the timeline bullet to the left (CSS) -->
+										<article class="item pb-5">
+											<div class="header">
+												<div class="d-flex flex-column flex-md-row">
+													<h3 class="item-title">Machine Learning Engineer Nanodegree</h3>
+													<div class="institution">Udacity Inc.</div>
+												</div>
+												<div class="time">2019 - Present</div>
+											</div>
+
+											<div class="body">
+												<!-- TODO: fix this description -->
+												<!-- <p>Build convolutional networks for image recognition, recurrent networks for sequence generation, learn cutting-edge deep reinforcement learning algorithms—from Deep Q-Networks (DQN) to Deep Deterministic Policy Gradients (DDPG).
+
+															Advanced machine learning techniques and algorithms and how to package and deploy your models to a production environment. Gain practical experience using Amazon SageMaker to deploy trained models to a web application and evaluate the performance of your models. A/B test models and learn how to update the models as you gather more data, an important skill in industry.</p> -->
+												<h4 class="item-title">Projects completed:</h4>
+												<ul>
+													<li>Teach a Quadcopter to Fly</li>
+													<li>Dog Breed Classifier</li>
+													<li>Predicting Boston Housing Prices</li>
+													<li>Classifying Customer Groups</li>
+													<li>Predict Individual Income from Census Data</li>
+													<li>Predict Boston Housing Prices</li>
+												</ul>
+												<h4 class="item-title">Technologies used:</h4>
+												<ul class="list-inline">
+													<li class="list-inline-item"
+														><span class="badge badge-primary badge-pill"
+															>JupyterNotebooks</span
+														></li
+													>
+													<li class="list-inline-item"
+														><span class="badge badge-primary badge-pill">Keras</span></li
+													>
+													<li class="list-inline-item"
+														><span class="badge badge-primary badge-pill">Tensorflow</span></li
+													>
+													<li class="list-inline-item"
+														><span class="badge badge-primary badge-pill">Scikit-learn</span></li
+													>
+													<li class="list-inline-item"
+														><span class="badge badge-primary badge-pill">Numpy</span></li
+													>
+													<li class="list-inline-item"
+														><span class="badge badge-primary badge-pill">Matplotlib</span></li
+													>
+													<li class="list-inline-item"
+														><span class="badge badge-primary badge-pill">Seaborn</span></li
+													>
+													<li class="list-inline-item"
+														><span class="badge badge-primary badge-pill">Pandas</span></li
+													>
+												</ul>
+											</div>
+										</article>
+
+										<article class="item">
+											<div class="header">
+												<div class="d-flex flex-column flex-md-row">
+													<h3 class="item-title">Bachelor of Medicine</h3>
+													<div class="institution">Universidad de Carabobo, Venezuela.</div>
+												</div>
+												<div class="time">2012 - 2018</div>
+											</div>
+
+											<div class="body">
+												<!-- TODO: fix this description -->
+												<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, aperiam quas voluptatibus delectus necessitatibus cum dolores a, maiores beatae ipsam provident odio voluptas nesciunt sequi! Ratione quisquam iusto mollitia explicabo?</p> -->
+												<h4 class="item-title">Achivements:</h4>
+												<ul>
+													<li>Five Academic Acknowledgements (from 2nd to 6th year)</li>
+													<li
+														>Thesis: “In vitro effect of croton malambo and croton micans on human
+														cancer cell lines and its interaction with chemotherapeutic drugs”</li
+													>
+												</ul>
+											</div>
+										</article>
+									</div>
+									<!-- /End of the timeline -->
+								</section>
+								<!-- /End of the education section-->
+
+								<!-- Work experience section -->
+								<section class="work-experience">
+									<h2 class="title">Work Experience</h2>
+									<div class="timeline">
+										<article class="item pb-5">
+											<div class="header">
+												<div class="d-flex flex-column flex-md-row">
+													<h3 class="item-title">Medical Student</h3>
+													<div class="institution">Maracay Central Hospital, Venezuela.</div>
+												</div>
+												<div class="time">2014 - 2018</div>
+											</div>
+
+											<div class="body">
+												<p>
+													Clinical Clerkships rotating through all the main Medical Specialties
+													(Surgery, Internal Medicine, Pediatrics, Obstetrics and gynecology).
+												</p>
+												<h4 class="item-title">Tasks:</h4>
+												<ul>
+													<li>Elicit patient histories</li>
+													<li>Complete physical examinations</li>
+													<li>Write progress notes</li>
+													<li>Assists in surgeries and medical procedures</li>
+												</ul>
+											</div>
+										</article>
+
+										<article class="item pb-5">
+											<div class="header">
+												<div class="d-flex flex-column flex-md-row">
+													<h3 class="item-title">Medical Student</h3>
+													<div class="institution"
+														>Ambulatory Health Center of Turmero, Venezuela.</div
+													>
+												</div>
+												<div class="time">2018</div>
+											</div>
+
+											<div class="body">
+												<p>
+													Four months working as rural doctor with senior supervision.
+												</p>
+												<h4 class="item-title">Tasks:</h4>
+												<ul>
+													<li>Evaluating patients and making treatment decisions</li>
+													<li>Tracking patients diagnostic data</li>
+													<li>Screening patients for diseases</li>
+													<li
+														>Carry out local preventive medicine plans and other primary care
+														services</li
+													>
+												</ul>
+											</div>
+										</article>
+
+										<article class="item">
+											<div class="header">
+												<div class="d-flex flex-column flex-md-row">
+													<h3 class="item-title">Thesis Student</h3>
+													<div class="institution"
+														>Venezuelan Institute for Scientific Research.</div
+													>
+												</div>
+												<div class="time">2015 - 2017</div>
+											</div>
+
+											<div class="body">
+												<p
+													>Experimental Medicine Center - Laboratory of Cellular and Molecular
+													Pathology.</p
+												>
+												<h4 class="item-title">Tasks:</h4>
+												<ul>
+													<li>Management of cell cultures</li>
+													<li>In-vitro citotoxicity assays</li>
+													<li>Analysis of results</li>
+													<li>Weekly discussions of current scientific topics in the area</li>
+												</ul>
+											</div>
+										</article>
+									</div>
+									<!-- /End of the timeline -->
+								</section>
+								<!-- /End of the work experience section -->
+							</div>
+							<!-- /End of the wider column-->
+
+							<!-- Secondary column -->
+							<div class="col-lg-3 my-3">
+								<section class="skills">
+									<h2 class="title">Skills</h2>
+									<div class="body">
+										<div class="item">
+											<h4 class="item-title">Languages</h4>
+											<ul class="list-unstyled mb-">
+												<li>
+													<p class="name">Spanish</p>
+													<div class="progress skill-progress">
+														<div
+															class="progress-bar progress-bar-striped progress-bar-animated"
+															role="progressbar"
+															style="width: 100%"
+															aria-valuenow="100"
+															aria-valuemin="0"
+															aria-valuemax="100"
+														></div>
+													</div>
+												</li>
+												<li>
+													<p class="name">English</p>
+													<div class="progress skill-progress">
+														<div
+															class="progress-bar progress-bar-striped progress-bar-animated"
+															role="progressbar"
+															style="width: 97%"
+															aria-valuenow="97"
+															aria-valuemin="0"
+															aria-valuemax="100"
+														></div>
+													</div>
+												</li>
+												<li>
+													<p class="name">German</p>
+													<div class="progress skill-progress">
+														<div
+															class="progress-bar progress-bar-striped progress-bar-animated"
+															role="progressbar"
+															style="width: 85%"
+															aria-valuenow="85"
+															aria-valuemin="0"
+															aria-valuemax="100"
+														></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="item">
+											<h4 class="item-title">Software</h4>
+											<ul class="list-unstyled mb-4">
+												<li>
+													<p class="name">Python</p>
+													<div class="progress skill-progress">
+														<div
+															class="progress-bar"
+															role="progressbar"
+															style="width: 80%"
+															aria-valuenow="80"
+															aria-valuemin="0"
+															aria-valuemax="100"
+														></div>
+													</div>
+												</li>
+												<li>
+													<p class="name">Numpy/Pandas/Matplotlib</p>
+													<div class="progress skill-progress">
+														<div
+															class="progress-bar"
+															role="progressbar"
+															style="width: 80%"
+															aria-valuenow="80"
+															aria-valuemin="0"
+															aria-valuemax="100"
+														></div>
+													</div>
+												</li>
+												<li>
+													<p class="name">Scikit-Learn</p>
+													<div class="progress skill-progress">
+														<div
+															class="progress-bar"
+															role="progressbar"
+															style="width: 60%"
+															aria-valuenow="60"
+															aria-valuemin="0"
+															aria-valuemax="100"
+														></div>
+													</div>
+												</li>
+												<li>
+													<p class="name">Keras</p>
+													<div class="progress skill-progress">
+														<div
+															class="progress-bar"
+															role="progressbar"
+															style="width: 60%"
+															aria-valuenow="60"
+															aria-valuemin="0"
+															aria-valuemax="100"
+														></div>
+													</div>
+												</li>
+												<li>
+													<p class="name">SQL</p>
+													<div class="progress skill-progress">
+														<div
+															class="progress-bar"
+															role="progressbar"
+															style="width: 60%"
+															aria-valuenow="60"
+															aria-valuemin="0"
+															aria-valuemax="100"
+														></div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<!-- /End of skills section -->
+
+								<section class="activities">
+									<h2 class="title">Courses</h2>
+									<div class="body">
+										<div class="item">
+											<h3 class="item-title">Introduction to Machine Learning</h3>
+											<p class="institution">Udacity Inc.</p>
+											<p class="time">2018</p>
+										</div>
+										<div class="item">
+											<h3 class="item-title">Introduction to AI</h3>
+											<p class="institution">Udacity Inc.</p>
+											<p class="time">2018</p>
+										</div>
+										<div class="item">
+											<h3 class="item-title">Complete Python Masterclass</h3>
+											<p class="institution">Udacity Inc.</p>
+											<p class="time">2017 - 2018</p>
+										</div>
+										<div class="item">
+											<h3 class="item-title">Advanced Cardiopulmonary Reuscitation Workshop</h3>
+											<p class="institution">Universidad de Carabobo, Venezuela.</p>
+											<p class="time">2016</p>
+										</div>
+										<div class="item">
+											<h3 class="item-title">Advanced Airway Management</h3>
+											<p class="institution">Medical Association of Aragua, Venezuela.</p>
+											<p class="time">2016</p>
+										</div>
+									</div>
+								</section>
+								<!-- /End of activities section -->
+
+								<section class="hobbies">
+									<h2 class="title">Hobbies</h2>
+									<div class="body">
+										<div class="item">
+											<ul class="list-unstyled">
+												<li>Chess</li>
+												<li>Table Tennis (Ping-pong)</li>
+												<li>Reading</li>
+												<li>Guitar</li>
+												<li>Gaming</li>
+											</ul>
+										</div>
+									</div>
+								</section>
+								<!-- /End of hobbies section -->
+							</div>
+							<!-- /End of the secondary column -->
+						</div>
+						<!-- /End of the row -->
+					</div>
+					<!-- /End of the main block of the resume -->
+				</div>
+				<!-- /End of the resume -->
+			</section>
+			<!-- /End of the section about -->
+		</main>
+
+		<!-- Footer section -->
+		<footer>
+			<div class="social">
+				<a
+					aria-label="Check my Twitter account"
+					href="https://twitter.com/SamyRodrguez"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<!-- Twitter icon -->
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path
+							d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+						/>
+					</svg>
+				</a>
+				<a
+					aria-label="Check my Facebook account"
+					href="https://www.facebook.com/profile.php?id=668912495"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<!-- Facebook icon -->
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path
+							d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"
+						/>
+					</svg>
+				</a>
+				<a
+					aria-label="Check my LinkedIn account"
+					href="https://www.linkedin.com/in/samrodriguezlopez/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<!-- LinkedIn icon -->
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+						<path
+							d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+						/>
+					</svg>
+				</a>
+				<a
+					aria-label="Check my GitHub account"
+					href="https://github.com/Sam1320"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<!-- GitHub icon -->
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+						<path
+							d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+						/>
+					</svg>
+				</a>
+				<a
+					aria-label="Send me an email"
+					href="mailto:sarl132040@gmail.com"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<!-- Envelope icon -->
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path
+							d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+						/>
+					</svg>
+				</a>
+			</div>
+			<small>Copyright 2019 &copy; Samuel Rodríguez</small>
+		</footer>
+
+		<!-- Bootstrap Javascript -->
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+			crossorigin="anonymous"
+		></script>
+		<!-- Smooth scroll -->
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+		<!-- Typed.js -->
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+		<!-- Custom Javascript -->
+		<script src="assets/scripts/scripts.js"></script>
+	</body>
+	<!-- This is it! -->
+</html>
